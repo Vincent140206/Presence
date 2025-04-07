@@ -5,214 +5,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Presence App - Custom CSS</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 <body>
     <div class="app-container">
         <!-- Status Bar -->
-        <div class="status-bar">
+        <div class="status-bar border">
             <span>9:41</span>
-            <span> 
-                <i class="bi bi-reception-4"></i> 
-                <i class="bi bi-wifi"></i>
-                <i class="bi bi-battery-full"></i>
-            </span>
+            <span>Signal • Battery</span>
         </div>
         
         <!-- Header -->
-        <div class="px-3">
-            <div class="header d-flex justify-content-between align-items-center">
-                <div class="app-title">Presence</div>
-                <div class="header-icons d-flex gap-3">
-                    <span><i class="bi bi-send fs-4"></i></span>
-                    <span><i class="bi bi-bell fs-4"></i></span>
-                    <span><i class="bi bi-person fs-4"></i></span>
-                </div>
+        <div class="header border d-flex justify-content-between align-items-center">
+            <div class="app-title border-light">Presence</div>
+            <div class="header-icons border-light d-flex gap-3">
+                <span>icon</span>
+                <span>icon</span>
+                <span>icon</span>
             </div>
         </div>
         
         <!-- Attendance Button -->
-        <div class="reusable-container px-3 mx-3">
-            <div class="attendance-btn d-flex align-items-center justify-content-between w-100">
-                <div class="d-flex align-items-center">
-                  <span class="icon"><i class="bi bi-calendar"></i></span>
-                  <div class="mx-2">Take attendance today</div>
-                </div>
-                <button class="btn btn-danger btn-sm">Submit</button>
-              </div>
+        <div class="attendance-btn border d-flex justify-content-between align-items-center">
+            <div class="border-light">Take attendance today</div>
+            <button class="btn btn-danger btn-sm border-light">MARK</button>
         </div>
         
         <!-- Home Content -->
-        <div class="home-content px-3">
+        <div class="main-content border">
             <!-- Date Header -->
-            <div class="reusable-container">
-                <div class="date-section d-flex justify-content-between align-items-center">
-                    <div class="date-info">
-                        <span class="day-number">
-                            <span class="date">27</span>
-                            <div class="date-details">
-                                <span class="date-text">Wednesday</span>
-                                <span class="month-year">August 2019</span>
-                            </div>
-                            <div class="date-arrow">
-                                <i class="bi bi-chevron-right"></i>
-                            </div>
-                        </span>
-                    </div>
+            <div class="date-section border d-flex justify-content-between align-items-center">
+                <div class="date-info border-light">
+                    <div class="day-number">27</div>
+                    <div class="date-text small">Wednesday August 2023</div>
                 </div>
+                <div class="date-arrow border-light">arrow</div>
+            </div>
             
-                <!-- Week Status -->
-                <div class="week-status mb-4">
-                    <div class="week-label mb-2">This week status</div>
-                    <div class="days">
-                        <div class="day">
-                            <div class="day-label">M</div>
-                            <i class="bi bi-check-circle-fill" style="color: #7231ce;"></i>
-                        </div>
-                        <div class="day">
-                            <div class="day-label">T</div>
-                            <i class="bi bi-h-circle-fill" style="color: #d11f12;"></i>
-                        </div>
-                        <div class="day">
-                            <div class="day-label">W</div>
-                            <i class="bi bi-check-circle-fill" style="color: #7231ce;"></i>
-                        </div>
-                        <div class="day">
-                            <div class="day-label">Th</div>
-                            <i class="bi bi-circle" style="color: #d11f12;"></i>
-                        </div>
-                        <div class="day">
-                            <div class="day-label">F</div>
-                            <i class="bi bi-circle" style="color: #d11f12;"></i>
-                        </div>
+            <!-- Week Status -->
+            <div class="week-status border mb-4">
+                <div class="week-label border-light mb-2">This week status</div>
+                <div class="days border-light">
+                    <div class="day border-light">
+                        <div class="day-label">M</div>
+                        <div class="day-circle border-light">26</div>
+                    </div>
+                    <div class="day border-light">
+                        <div class="day-label">T</div>
+                        <div class="day-circle border-light">27</div>
+                    </div>
+                    <div class="day border-light">
+                        <div class="day-label">W</div>
+                        <div class="day-circle border-light">28</div>
+                    </div>
+                    <div class="day border-light">
+                        <div class="day-label">Th</div>
+                        <div class="day-circle border-light">29</div>
+                    </div>
+                    <div class="day border-light">
+                        <div class="day-label">F</div>
+                        <div class="day-circle border-light">30</div>
                     </div>
                 </div>
             </div>
             
             <!-- Stats -->
-            <div class="reusable-container">
-                <div class="container mt-3">
-                    <div class="row text-center justify-content-center">
-                    <div class="col-md-4 mb-4">
-                        <div class="stat-circle">
-                        <svg viewBox="0 0 36 36" class="circular-chart">
-                            <path class="circle-bg"
-                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 
-                                a 15.9155 15.9155 0 0 1 0 -31.831" />
-                            <path class="circle" stroke-dasharray="83, 100"
-                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 
-                                a 15.9155 15.9155 0 0 1 0 -31.831" />
-                            <text x="18" y="20.35" class="percentage">83%</text>
-                        </svg>
+            <div class="stats-section border mb-4">
+                <div class="row text-center">
+                    <div class="col-4 border-light">
+                        <div class="stat-circle border-light">
+                            83
                         </div>
                         <div class="stat-label">Attendance</div>
                     </div>
-                    <div class="col-md-4 mb-3">
-                        <div class="stat-circle">
-                        <svg viewBox="0 0 36 36" class="circular-chart">
-                            <path class="circle-bg"
-                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 
-                                a 15.9155 15.9155 0 0 1 0 -31.831" />
-                            <path class="circle" stroke-dasharray="30, 100"
-                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 
-                                a 15.9155 15.9155 0 0 1 0 -31.831" />
-                            <text x="18" y="20.35" class="percentage">03</text>
-                        </svg>
+                    <div class="col-4 border-light">
+                        <div class="stat-circle border-light">
+                            03
                         </div>
                         <div class="stat-label">Leave Taken</div>
                     </div>
-                    <div class="col-md-4 mb-3">
-                        <div class="stat-circle">
-                        <svg viewBox="0 0 36 36" class="circular-chart">
-                            <path class="circle-bg"
-                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 
-                                a 15.9155 15.9155 0 0 1 0 -31.831" />
-                            <path class="circle" stroke-dasharray="60, 100"
-                            d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 
-                                a 15.9155 15.9155 0 0 1 0 -31.831" />
-                            <text x="18" y="20.35" class="percentage">23</text>
-                        </svg>
+                    <div class="col-4 border-light">
+                        <div class="stat-circle border-light">
+                            23
                         </div>
                         <div class="stat-label">Ongoing Days</div>
-                    </div>
                     </div>
                 </div>
             </div>
             
             <!-- Menu Grid -->
-            <div class="reusable-container">
-                <div class="container menu-grid my-2">
-                  <div class="row g-0 text-center">
-                    
-                    <div class="col-4 border-end border-bottom menu-item">
-                      <div class="icon-circle">
-                        <i class="bi bi-calendar-event fs-2 icon" style="color: #6212d1;"></i>
-                      </div>
-                      <div class="menu-label">Ask Leave</div>
+            <div class="menu-grid border">
+                <div class="row g-3">
+                    <div class="col-4">
+                        <div class="menu-item border-light">
+                            <div class="menu-icon mb-2">icon</div>
+                            <div class="menu-label">Ask Leave</div>
+                        </div>
                     </div>
-              
-                    <div class="col-4 border-end border-bottom menu-item">
-                      <div class="icon-circle">
-                        <i class="bi bi-award fs-2 icon" style="color: #6212d1;"></i>
-                      </div>
-                      <div class="menu-label">Leaderboard</div>
+                    <div class="col-4">
+                        <div class="menu-item border-light">
+                            <div class="menu-icon mb-2">icon</div>
+                            <div class="menu-label">Leaderboard</div>
+                        </div>
                     </div>
-              
-                    <div class="col-4 border-bottom menu-item position-relative">
-                      <div class="icon-circle">
-                        <i class="bi bi-newspaper fs-2 icon" style="color: #6212d1;"></i>
-                      </div>
-                      <div class="menu-label">News <span class="dot"></span></div>
+                    <div class="col-4">
+                        <div class="menu-item border-light">
+                            <div class="menu-icon mb-2">icon</div>
+                            <div class="menu-label">Notes</div>
+                        </div>
                     </div>
-              
-                    <div class="col-4 border-end menu-item">
-                      <div class="icon-circle">
-                        <i class="bi bi-bar-chart fs-2 icon" style="color: #6212d1;"></i>
-                      </div>
-                      <div class="menu-label">Predictor</div>
+                    <div class="col-4">
+                        <div class="menu-item border-light">
+                            <div class="menu-icon mb-2">icon</div>
+                            <div class="menu-label">Predictor</div>
+                        </div>
                     </div>
-              
-                    <div class="col-4 border-end menu-item">
-                      <div class="icon-circle">
-                        <i class="bi bi-people fs-2 icon" style="color: #6212d1;"></i>
-                      </div>
-                      <div class="menu-label">Friends</div>
+                    <div class="col-4">
+                        <div class="menu-item border-light">
+                            <div class="menu-icon mb-2">icon</div>
+                            <div class="menu-label">Friends</div>
+                        </div>
                     </div>
-              
-                    <div class="col-4 menu-item position-relative">
-                      <div class="icon-circle">
-                        <i class="bi bi-journal-text fs-2 icon" style="color: #6212d1;"></i>
-                      </div>
-                      <div class="menu-label">Assignments <span class="dot"></span></div>
+                    <div class="col-4">
+                        <div class="menu-item border-light">
+                            <div class="menu-icon mb-2">icon</div>
+                            <div class="menu-label">Assignments</div>
+                        </div>
                     </div>
-                    
-                  </div>
                 </div>
-              </div>
-              
+            </div>
+        </div>
+        
         <!-- Bottom Nav Bar -->
-        <div class="bottom-nav d-flex justify-content-between align-items-center">
-            <div class="nav-item active">
-              <i class="bi bi-house icon"></i>
-              <div class="nav-label">Home</div>
+        <div class="bottom-nav border">
+            <div class="d-flex justify-content-around">
+                <div class="nav-item border-light">icon</div>
+                <div class="nav-item border-light">icon</div>
+                <div class="nav-item border-light">icon</div>
+                <div class="nav-item border-light">icon</div>
+                <div class="nav-item border-light">icon</div>
             </div>
-            <div class="nav-item">
-              <i class="bi bi-clock icon"></i>
-            </div>
-            <div class="nav-item center-icon">
-              <i class="bi bi-circle icon"></i>
-            </div>
-            <div class="nav-item">
-              <i class="bi bi-calendar3 icon"></i>
-            </div>
-            <div class="nav-item">
-              <i class="bi bi-mortarboard icon"></i>
-            </div>
-          </div>
-          
-          
+        </div>
     </div>
-    <script src="js.js"></script>
 </body>
 </html>
